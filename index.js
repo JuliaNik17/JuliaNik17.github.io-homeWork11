@@ -1,3 +1,4 @@
+import "./pages/index.css";
 class Card {
     constructor(name, link) {
         this.cardElement = this.create(name, link);
