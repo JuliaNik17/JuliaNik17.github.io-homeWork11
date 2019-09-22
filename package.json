@@ -1,0 +1,35 @@
+{
+  "name": "julianik17.github.io-homework11",
+  "version": "1.0.0",
+  "description": "Сервис Mesto. Проект представляет собой интерактивную страницу, на которую можно загружать фотографии, удалять их, ставить лайки, а также редактировать профиль. Проект Mesto подключен к серверу. С помощью GET-запросов с сервера загружается информация о пользователи и первоначальные карточки.",
+  "main": "script.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --mode development --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuliaNik17/JuliaNik17.github.io-homeWork11.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuliaNik17/JuliaNik17.github.io-homeWork11/issues"
+  },
+  "homepage": "https://github.com/JuliaNik17/JuliaNik17.github.io-homeWork11#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "webpack": "^4.40.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^3.1.4"
+  }
+}
