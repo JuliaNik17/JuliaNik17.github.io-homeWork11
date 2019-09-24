@@ -1,4 +1,3 @@
-import "./pages/index.css";
 class Card {
     constructor(name, link) {
         this.cardElement = this.create(name, link);
@@ -323,10 +322,11 @@ function enableButton(button, enabled) {
     }
 }
 
+// import {validateURL} from "./validUrl";
 function validateURL(element) {
     const url = element.value;
     let pattern = /(ftp|http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
     return pattern.test(url);
 }
 
-
+import "./index.css"
