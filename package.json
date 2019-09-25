@@ -4,8 +4,9 @@
   "description": "Сервис Mesto. Проект представляет собой интерактивную страницу, на которую можно загружать фотографии, удалять их, ставить лайки, а также редактировать профиль. Проект Mesto подключен к серверу. С помощью GET-запросов с сервера загружается информация о пользователи и первоначальные карточки.",
   "main": "script.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development --open --watch"
+    "build": "NODE_ENV=production rimraf dist && webpack --mode production",
+    "dev": "NODE_ENV=development webpack-dev-server --mode development --open --watch",
+    "deploy": "NODE_ENV=production gh-pages -d dist"
   },
   "repository": {
     "type": "git",
